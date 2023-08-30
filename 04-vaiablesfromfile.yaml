@@ -3,6 +3,6 @@
   vars_files:
   - variables.yaml
   tasks:
-    - name: Printing variables
-      ansible.builtin.debug:
-        msg: "I am learning {{Name}}, Duration is {{Duration}}, Quote is {{Quotes}}"
+  - name: Printing variables
+    ansible.builtin.debug:
+      msg: "I am learning {{Name}}, Duration is {{Duration}}, Quote is {{Quotes}}"
