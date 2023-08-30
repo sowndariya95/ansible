@@ -4,5 +4,5 @@
     - variables.yaml
   tasks:
   - name: Printing variables
-    anisble.builtin.debug:
+    ansible.builtin.debug:
       msg: "I am learning {{Name}}, Duration is {{Duration}}, Quote is {{Quote}}"
