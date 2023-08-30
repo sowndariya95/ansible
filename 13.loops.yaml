@@ -1,0 +1,11 @@
+- name: Install apps
+  hosts: mangodb
+  tasks:
+  - name: Install app
+    ansbile.buitin.yum:
+      name: "{{item}}"
+      state: installed
+    loop:
+    - nginx
+    - postfix
+    - mailx
