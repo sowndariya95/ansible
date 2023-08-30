@@ -1,5 +1,5 @@
 - name: Install apps
-  hosts: mangodb
+  hosts: mongodb
   tasks:
   - name: Install app
     ansbile.builtin.yum:
