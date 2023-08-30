@@ -2,7 +2,7 @@
   hosts: mangodb
   tasks:
   - name: Install app
-    ansbile.buitin.yum:
+    ansbile.builtin.yum:
       name: "{{item}}"
       state: installed
     loop:
