@@ -1,7 +1,7 @@
 - name: sample condition
   hosts: localhost
   vars:
-    NAME: Devops
+    NAME: git
   tasks:
     - name: check condition
       ansible.builtin.debug:
