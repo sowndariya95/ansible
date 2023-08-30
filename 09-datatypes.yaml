@@ -1,0 +1,30 @@
+- name: print datatype
+  hosts:  localhost
+  vars:
+  - AGE: 30
+  - NAME: "sowndi"
+  - isdevops: True
+  - skills:
+    - git
+    - ansible
+    - postfix
+  - Experience:
+      Course: Devops
+      Day: 10
+
+  tasks:
+    - name: Print number
+      ansible.builtin.debug:
+        msg: "Print age : {{AGE}}"
+    - name: Print string
+      ansible.builtin.debug:
+        msg: "Print NAME : {{NAME}}"
+    - name: Print Boolean
+      ansible.builtin.debug:
+        msg: "Print isdevops : {{isdevops}}"
+    - name: Print list
+      ansible.builtin.debug:
+        msg: "Print skills : {{skills}}"
+    - name: Print map
+      ansible.builtin.debug:
+        msg: "Print experience : {{Experience}}"
