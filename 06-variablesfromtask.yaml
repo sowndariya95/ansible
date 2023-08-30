@@ -1,0 +1,15 @@
+- name: variables from task
+  hosts: localhost
+  vars:
+  - money: 500
+    land: 3hector
+  tasks:
+    - name: Print money from play
+      ansible.builtin.debug:
+        msg: "Money : {{money}}, land : {{land}}"
+    - name: overwrite and include new variable
+      vars:
+      - money: 1000
+        house: 5
+      ansible.builtin.debug:
+        msg: "Money : {{money}}, land : {{land}} and house : {{house}}"
